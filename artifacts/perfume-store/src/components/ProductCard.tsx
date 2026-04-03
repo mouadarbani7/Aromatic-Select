@@ -10,6 +10,7 @@ interface ProductCardProps {
     description: string;
     isBestSeller?: boolean;
     isNew?: boolean;
+    imageUrl?: string;
   };
   basePrice: number;
 }
@@ -37,7 +38,7 @@ export function ProductCard({ perfume, basePrice }: ProductCardProps) {
       <div className="relative aspect-[3/4] bg-muted/20 overflow-hidden flex items-center justify-center p-8">
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
         <motion.img
-          src={bottleImg}
+          src={perfume.imageUrl || bottleImg}
           alt={perfume.name}
           className="w-full h-full object-contain filter drop-shadow-2xl"
           whileHover={{ scale: 1.05 }}

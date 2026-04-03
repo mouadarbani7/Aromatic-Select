@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { useCart } from "@/context/CartContext";
 import { ShoppingBag, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { MistoriaLogo } from "./MistoriaLogo";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,10 +52,13 @@ export function Navbar() {
 
           {/* Logo */}
           <Link href="/" className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center group">
-            <span className="font-serif text-2xl lg:text-3xl tracking-[0.25em] uppercase text-foreground group-hover:text-primary transition-colors">
-              Mistoria
-            </span>
-            <span className="text-[9px] tracking-[0.4em] uppercase text-primary/70 mt-0.5 font-sans hidden lg:block">Luxury Perfumes</span>
+            <div className="flex items-center gap-2">
+              <MistoriaLogo className="w-8 h-8 group-hover:drop-shadow-[0_0_8px_rgba(212,175,55,0.4)] transition-all" />
+              <span className="font-serif text-2xl lg:text-3xl tracking-[0.25em] uppercase text-foreground group-hover:text-primary transition-colors">
+                Mistoria
+              </span>
+            </div>
+            <span className="text-[9px] tracking-[0.4em] uppercase text-primary/70 mt-0.5 font-sans hidden lg:block">Discover Your Signature Scent</span>
           </Link>
 
           {/* Cart & Actions */}

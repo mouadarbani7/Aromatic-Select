@@ -73,7 +73,7 @@ export default function ProductDetailPage() {
           >
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-transparent pointer-events-none" />
             <img 
-              src={bottleImg} 
+              src={perfume.imageUrl || bottleImg}
               alt={perfume.name} 
               className="w-full h-full object-contain filter drop-shadow-2xl relative z-10"
             />
