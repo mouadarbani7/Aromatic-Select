@@ -149,7 +149,7 @@ export default function CheckoutPage() {
                 <button 
                   type="submit" 
                   disabled={isSubmitting}
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-5 text-sm tracking-widest uppercase transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(201,162,39,0.1)] hover:shadow-[0_0_30px_rgba(201,162,39,0.3)] disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-5 text-sm tracking-widest uppercase transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(212,175,55,0.1)] hover:shadow-[0_0_30px_rgba(212,175,55,0.3)] disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <motion.div

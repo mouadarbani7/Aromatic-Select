@@ -51,9 +51,10 @@ export function Navbar() {
 
           {/* Logo */}
           <Link href="/" className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center group">
-            <span className="font-serif text-2xl lg:text-3xl tracking-widest uppercase text-foreground group-hover:text-primary transition-colors">
-              Maison Noir
+            <span className="font-serif text-2xl lg:text-3xl tracking-[0.25em] uppercase text-foreground group-hover:text-primary transition-colors">
+              Mistoria
             </span>
+            <span className="text-[9px] tracking-[0.4em] uppercase text-primary/70 mt-0.5 font-sans hidden lg:block">Luxury Perfumes</span>
           </Link>
 
           {/* Cart & Actions */}

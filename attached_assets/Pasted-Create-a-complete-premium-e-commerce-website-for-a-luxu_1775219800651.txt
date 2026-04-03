@@ -1,0 +1,81 @@
+Create a complete premium e-commerce website for a luxury perfume brand called "Mistoria".
+
+1. Branding:
+- Brand name: Mistoria
+- Style: luxury, minimalist, high-end
+- Colors: black, white, gold (#D4AF37)
+- Create a modern elegant logo for "Mistoria" with a custom "M" symbol inspired by mist or aura
+- Provide logo in text version + icon version
+- Use a dark background for premium feel
+
+2. Domain / URL:
+- Set the website name and URL as: mistoria.com (or mistoria.ma)
+- Ensure branding is consistent across all pages
+
+3. Homepage:
+- Hero section with luxury perfume visuals
+- Headline: "Discover Your Signature Scent"
+- Smooth animations and premium layout
+- Add sections:
+  - Best Sellers
+  - Featured Products
+  - Customer Reviews
+  - Limited Offer Countdown Timer
+
+4. Products to include:
+
+Product 1:
+Name: Stronger With You Intensely
+Description:
+A warm and addictive fragrance with notes of vanilla, amber, and spicy cinnamon. Perfect for confident and modern men who want to stand out.
+Vibe: sensual, strong, winter fragrance
+
+Product 2:
+Name: Xerjoff Erba Pura
+Description:
+A luxurious fruity fragrance blending orange, lemon, and exotic fruits with soft musk and vanilla. A fresh yet elegant scent for daily wear.
+Vibe: fresh, rich, unisex
+
+Product 3:
+Name: Versace Eros Eau de Parfum
+Description:
+A powerful and seductive fragrance with mint, apple, vanilla, and tonka bean. Designed for bold personalities and night vibes.
+Vibe: seductive, masculine, energetic
+
+- Use high-quality realistic product images (luxury style, dark background, glowing effect)
+
+5. Product Page Features:
+- Elegant layout
+- Show perfume notes (Top / Middle / Base)
+- Add volume selection:
+
+Options:
+- 10ml
+- 20ml
+- 30ml
+- 50ml
+
+- Dynamic pricing:
+  - Price updates when user selects ml
+- Modern UI (buttons or slider)
+
+6. User Experience:
+- Smooth animations
+- Fast loading
+- Mobile optimized
+- Sticky navbar
+
+7. Sales Psychology:
+- Show "🔥 15 people are viewing this product"
+- Show "Limited stock available"
+- Add urgency with countdown timer
+
+8. Checkout:
+- Clean, simple checkout page
+- Optimized for conversions
+
+9. Extra:
+- Add Instagram-style visuals
+- Make the site look like a premium international perfume brand
+
+The final result must look like a high-end brand similar to Dior or Tom Ford.

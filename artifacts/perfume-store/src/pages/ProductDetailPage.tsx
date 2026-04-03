@@ -1,11 +1,11 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { useRoute } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { PERFUMES, VOLUME_PRICES } from "@/data/perfumes";
 import { VolumeSelector } from "@/components/VolumeSelector";
 import { useCart } from "@/context/CartContext";
 import bottleImg from "@/assets/bottle.png";
-import { ArrowLeft, Check } from "lucide-react";
+import { ArrowLeft, Check, Users, AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
 
 export default function ProductDetailPage() {
@@ -15,7 +15,18 @@ export default function ProductDetailPage() {
   
   const [selectedMl, setSelectedMl] = useState(VOLUME_PRICES[0].ml);
   const [isAdded, setIsAdded] = useState(false);
+  const [viewerCount, setViewerCount] = useState(15);
   const { addItem } = useCart();
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setViewerCount(prev => {
+        const change = Math.random() > 0.5 ? 1 : -1;
+        return Math.max(10, Math.min(23, prev + change));
+      });
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   const currentPrice = useMemo(() => {
     return VOLUME_PRICES.find(v => v.ml === selectedMl)?.price || 0;
@@ -78,9 +89,25 @@ export default function ProductDetailPage() {
             <p className="text-primary tracking-[0.2em] uppercase text-sm mb-4">{perfume.tagline}</p>
             <h1 className="font-serif text-5xl md:text-6xl mb-6">{perfume.name}</h1>
             
-            <div className="flex items-end gap-2 mb-10 pb-10 border-b border-border/50">
+            <div className="flex items-end gap-2 mb-6 pb-6 border-b border-border/50">
               <span className="font-serif text-4xl">${currentPrice}</span>
               <span className="text-muted-foreground text-sm mb-1 uppercase tracking-widest">USD</span>
+            </div>
+
+            {/* Social Proof Badges */}
+            <div className="flex flex-wrap gap-3 mb-8">
+              <motion.div
+                animate={{ opacity: [0.7, 1, 0.7] }}
+                transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
+                className="flex items-center gap-2 bg-primary/10 border border-primary/20 text-primary px-4 py-2 text-xs tracking-wider"
+              >
+                <Users size={13} />
+                <span>{viewerCount} people viewing this now</span>
+              </motion.div>
+              <div className="flex items-center gap-2 bg-red-500/10 border border-red-500/20 text-red-400 px-4 py-2 text-xs tracking-wider">
+                <AlertTriangle size={13} />
+                <span>Limited stock available</span>
+              </div>
             </div>
 
             <div className="mb-12">

@@ -24,9 +24,10 @@ export default function ProductsPage() {
           variants={fadeIn}
           className="text-center max-w-2xl mx-auto mb-20"
         >
+          <p className="text-primary tracking-[0.3em] uppercase text-xs mb-4">Mistoria Exclusives</p>
           <h1 className="font-serif text-5xl md:text-6xl mb-6">The Collection</h1>
           <p className="text-muted-foreground text-lg font-light leading-relaxed">
-            Our complete library of scent. Each formulation is meticulously balanced and aged for three months before bottling.
+            Three signature fragrances, each one a statement. Curated for those who refuse to be ordinary.
           </p>
         </motion.div>
 
@@ -34,7 +35,7 @@ export default function ProductsPage() {
           initial="hidden"
           animate="visible"
           variants={stagger}
-          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8"
+          className="grid grid-cols-1 md:grid-cols-3 gap-10"
         >
           {PERFUMES.map((perfume) => (
             <motion.div key={perfume.id} variants={fadeIn}>

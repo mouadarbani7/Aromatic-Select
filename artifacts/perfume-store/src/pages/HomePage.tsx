@@ -17,7 +17,7 @@ const stagger = {
 };
 
 export default function HomePage() {
-  const bestSellers = PERFUMES.filter(p => p.isBestSeller).slice(0, 4);
+  const bestSellers = PERFUMES.filter(p => p.isBestSeller);
   const basePrice = VOLUME_PRICES[0].price;
 
   // Set countdown to 7 days from now
@@ -44,7 +44,7 @@ export default function HomePage() {
             transition={{ duration: 1.2, ease: "easeOut" }}
           >
             <p className="text-primary tracking-[0.3em] uppercase text-sm mb-6">
-              The Art of Fragrance
+              Mistoria — Luxury Fragrance House
             </p>
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-tight mb-8 drop-shadow-lg">
               Discover Your<br />
@@ -53,10 +53,10 @@ export default function HomePage() {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground font-light mb-12 max-w-2xl mx-auto leading-relaxed">
-              Step into our private atelier. Crafted in Paris, worn around the world. 
-              Find the shadow that lingers long after you leave.
+              Premium fragrances curated for those who refuse to be forgotten. 
+              Crafted for bold personalities, worn around the world.
             </p>
-            <Link href="/products" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-4 text-sm tracking-widest uppercase transition-all hover:shadow-[0_0_30px_rgba(201,162,39,0.3)]">
+            <Link href="/products" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-4 text-sm tracking-widest uppercase transition-all hover:shadow-[0_0_30px_rgba(212,175,55,0.4)]">
               Explore Collection
             </Link>
           </motion.div>
@@ -73,8 +73,8 @@ export default function HomePage() {
             variants={fadeIn}
             className="text-center mb-20"
           >
-            <h2 className="font-serif text-4xl md:text-5xl mb-4">The Icons</h2>
-            <p className="text-muted-foreground tracking-widest uppercase text-sm">Our Most Coveted Creations</p>
+            <h2 className="font-serif text-4xl md:text-5xl mb-4">Our Signature Fragrances</h2>
+            <p className="text-muted-foreground tracking-widest uppercase text-sm">Bestsellers Loved Worldwide</p>
           </motion.div>
 
           <motion.div 
@@ -82,7 +82,7 @@ export default function HomePage() {
             whileInView="visible"
             viewport={{ once: true, margin: "-50px" }}
             variants={stagger}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+            className="grid grid-cols-1 md:grid-cols-3 gap-8"
           >
             {bestSellers.map((perfume) => (
               <motion.div key={perfume.id} variants={fadeIn}>
@@ -148,26 +148,34 @@ export default function HomePage() {
           >
             <motion.div variants={fadeIn}>
               <ReviewCard 
-                name="E. Laurent" 
+                name="K. Mansour" 
                 rating={5} 
-                product="Noir Absolu"
-                text="I have searched for years for a scent that feels this complete. It doesn't announce my arrival, but it makes sure no one forgets I was there." 
+                product="Stronger With You Intensely"
+                text="I wore this on a first date and she literally asked me what I was wearing three times. The vanilla and cinnamon combo is absolutely addictive." 
               />
             </motion.div>
             <motion.div variants={fadeIn}>
               <ReviewCard 
-                name="S. Chen" 
+                name="C. Rousseau" 
                 rating={5} 
-                product="Lumière Dorée"
-                text="Literally sunshine in a bottle. It manages to be impossibly light and fresh while still having the staying power of a serious extrait." 
+                product="Xerjoff Erba Pura"
+                text="This is what I wear when I want to feel effortlessly luxurious without trying too hard. Fresh but rich, light but unforgettable. Pure class." 
               />
             </motion.div>
             <motion.div variants={fadeIn}>
               <ReviewCard 
-                name="M. Sterling" 
+                name="A. Patel" 
                 rating={5} 
-                product="Velours Rouge"
-                text="Dangerously sensual. I wear this when I need to command a room. The dry down is the most beautiful resinous rose I've ever experienced." 
+                product="Versace Eros EDP"
+                text="Ordered the 50ml and it arrived next day in perfect packaging. Compliments all day at work. Mistoria's service and the scent itself — both world class." 
+              />
+            </motion.div>
+            <motion.div variants={fadeIn}>
+              <ReviewCard 
+                name="Y. Hassan" 
+                rating={5} 
+                product="Stronger With You Intensely"
+                text="The 10ml was a perfect way to try it before committing. Absolutely stunning fragrance. Already ordered the 50ml bottle. Best purchase this year." 
               />
             </motion.div>
           </motion.div>
@@ -177,7 +185,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="bg-background border-t border-border/30 py-20">
         <div className="container mx-auto px-6 lg:px-12 flex flex-col items-center text-center">
-          <h2 className="font-serif text-3xl tracking-widest uppercase mb-4">Maison Noir</h2>
+          <h2 className="font-serif text-3xl tracking-widest uppercase mb-4">Mistoria</h2>
           <p className="text-primary italic font-serif text-lg mb-12">Discover Your Signature Scent</p>
           
           <div className="flex space-x-8 mb-12">
@@ -188,7 +196,7 @@ export default function HomePage() {
           </div>
           
           <p className="text-xs text-muted-foreground tracking-wider uppercase">
-            &copy; {new Date().getFullYear()} Maison Noir Paris. All rights reserved.
+            &copy; {new Date().getFullYear()} Mistoria Luxury Perfumes. All rights reserved.
           </p>
         </div>
       </footer>
