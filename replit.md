@@ -25,3 +25,22 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - `pnpm --filter @workspace/api-server run dev` — run API server locally
 
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
+
+## Artifacts
+
+### Luxe Parfum (perfume-store)
+
+- **Preview path**: `/`
+- **Type**: react-vite (frontend only, no backend)
+- **Brand**: MAISON NOIR — luxury perfume e-commerce
+- **Features**:
+  - Homepage with hero, best sellers, countdown timer, reviews
+  - Products catalog page (8 perfumes)
+  - Product detail page with dynamic volume/price selector (10ml/$5, 20ml/$9, 30ml/$15, 50ml/$20)
+  - Cart with quantity management
+  - Checkout form (UI only)
+  - Global CartContext for state management
+  - Framer Motion animations throughout
+  - Dark luxury theme (black/gold/white) with Cormorant Garamond + Montserrat fonts
+  - AI-generated product imagery
+  - Mobile-responsive with sticky glass-blur navbar

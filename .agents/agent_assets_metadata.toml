@@ -1,0 +1,14 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "6ZivIZeMCLTwFG3vDT2uI"
+uri = "file://artifacts/perfume-store/src/assets/hero-bg.png"
+type = "image"
+title = "Luxury perfume bottle hero"
+
+[[generated]]
+id = "9-7QqfmTkQcylQIf3yXoz"
+uri = "file://artifacts/perfume-store/src/assets/bottle.png"
+type = "image"
+title = "Sleek dark perfume bottle"
