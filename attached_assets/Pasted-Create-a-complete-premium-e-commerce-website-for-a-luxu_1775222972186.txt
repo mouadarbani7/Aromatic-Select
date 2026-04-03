@@ -1,0 +1,85 @@
+Create a complete premium e-commerce website for a luxury perfume brand called "Mistoria".
+
+1. Branding:
+- Brand name: Mistoria
+- Style: luxury, minimalist, high-end
+- Colors: black, white, gold (#D4AF37)
+- Create an elegant logo with a custom "M" inspired by mist or aura
+- Provide both icon logo and text logo
+- Use dark premium backgrounds
+
+2. Domain / URL:
+- Set the website URL to: https://mistoria.com
+- Ensure all branding reflects this domain
+
+3. Homepage:
+- Hero section with luxury perfume visuals
+- Headline: "Discover Your Signature Scent"
+- Add sections:
+  - Best Sellers
+  - Featured Products
+  - Reviews
+  - Countdown timer (limited offer)
+
+4. Products:
+
+Product 1:
+Name: Stronger With You Intensely
+Image: https://kosmenia.ma/cdn/shop/products/72-You-Intensely_grande.jpg?v=1588173524
+Description:
+A warm and addictive fragrance with vanilla, amber, and cinnamon. Perfect for confident men. Ideal for winter and night.
+Notes:
+- Top: Pink Pepper
+- Middle: Cinnamon, Lavender
+- Base: Vanilla, Amber
+
+Product 2:
+Name: Xerjoff Erba Pura
+Image: https://urperfume.ma/cdn/shop/files/rn-image_picker_lib_temp_625c3baa-27b2-4e23-ad6e-289314e43be6.png?v=1754505913
+Description:
+A luxurious fruity scent with citrus and exotic fruits mixed with soft musk and vanilla. Fresh and elegant.
+Notes:
+- Top: Orange, Lemon
+- Middle: Fruits
+- Base: Musk, Vanilla
+
+Product 3:
+Name: Versace Eros Eau de Parfum
+Image: https://kosmenia.ma/cdn/shop/files/versace_eros_eau_de_parfum_f_580x.jpg?v=1735745145
+Description:
+A bold and seductive fragrance with mint, apple, and tonka bean. Perfect for night and strong personalities.
+Notes:
+- Top: Mint, Apple
+- Middle: Ambroxan
+- Base: Vanilla, Tonka Bean
+
+5. Product Features:
+- Display product images clearly
+- Show description and notes
+- Add volume selection:
+  - 10ml
+  - 20ml
+  - 30ml
+  - 50ml
+
+- Dynamic pricing:
+  - Price updates based on ml selection
+  - Use modern UI (buttons or slider)
+
+6. User Experience:
+- Smooth animations
+- Fast loading
+- Mobile optimized
+- Sticky navigation bar
+
+7. Sales Optimization:
+- Show "🔥 15 people are viewing this product"
+- Show "Limited stock available"
+- Add urgency countdown timer
+
+8. Checkout:
+- Clean and simple checkout page
+
+9. Extra:
+- Instagram-style visuals
+- Premium luxury feel like Dior / Tom Ford
