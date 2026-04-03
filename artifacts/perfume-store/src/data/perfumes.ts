@@ -10,7 +10,7 @@ export const PERFUMES = [
     baseNotes: ["Vanilla", "Amber"],
     isBestSeller: true,
     isNew: false,
-    imageUrl: "https://kosmenia.ma/cdn/shop/products/72-You-Intensely_grande.jpg?v=1588173524",
+    imageUrl: "https://marionnaud.ma/cdn/shop/products/GA_2022_EA-SWY-Intensely_Pack-with-Ingredients_1x1_RVB-3000_1080x.png?v=1709896668",
   },
   {
     id: "2",
