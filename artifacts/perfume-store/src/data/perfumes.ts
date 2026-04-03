@@ -10,7 +10,7 @@ export const PERFUMES = [
     baseNotes: ["Vanilla", "Amber"],
     isBestSeller: true,
     isNew: false,
-    imageUrl: "https://marionnaud.ma/cdn/shop/products/GA_2022_EA-SWY-Intensely_Pack-with-Ingredients_1x1_RVB-3000_1080x.png?v=1709896668",
+    imageUrl: "public/STRONGER_WITH_YOU_INTENSELY_GIORGIO_ARMANI_foryou.ma-removebg-preview.png",
   },
   {
     id: "2",
